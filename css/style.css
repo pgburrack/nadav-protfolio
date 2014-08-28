@@ -373,7 +373,15 @@ footer .footer-below {
   z-index: 1052;
 }
 /* My styles*/
-/*** navbar ***/
+/*** General ***/
+body {
+  font-family: 'Vollkorn', serif;
+}
+/*** Navbar ***/
 .navbar-default {
   background-color: #29b6f6;
+  font-family: 'Vollkorn', serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
 }
