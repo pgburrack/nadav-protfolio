@@ -386,7 +386,7 @@ body {
   font-size: 18px;
   height: 241px;
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
-  padding: 0;
+  padding: 64px 0 38px;
 }
 .navbar-default:after {
   background-color: #03a9f4;
@@ -395,7 +395,26 @@ body {
   width: 100%;
   bottom: 1px;
 }
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ffffff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.nav {
+  margin-top: 64px;
+  margin-left: 89px;
+}
+.nav > li > a {
+  padding: 4px 5px;
+  margin: 0 7px;
+}
 .logo {
   display: inline-block;
   max-height: 112px;
+}
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
 }
