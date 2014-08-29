@@ -42,3 +42,8 @@
   @opacity-ie: (@opacity * 100);
   filter: ~"alpha(opacity=@{opacity-ie})";
 }
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+          transition: @transition;
+}

@@ -7,6 +7,7 @@
 body {
 	font-family: 'Vollkorn', serif;
 }
+
 /*** Navbar ***/
 .navbar-default {
 	background-color: @azure-light;
@@ -29,6 +30,11 @@ body {
 		color:@white;
 		.opacity(0.8);
 	}
+	.navbar-nav>.active>a,
+	.navbar-nav>.active>a:hover,
+	.navbar-default .navbar-nav>.active>a:focus {
+		background-color: #03a9f4;
+	}
 }
 .nav {
 	margin-top: 64px;
@@ -36,6 +42,7 @@ body {
 	&>li>a {
 		padding: 4px 5px;
 		margin: 0 7px;
+		line-height: 1;
 	}
 }
 .logo {
@@ -46,6 +53,23 @@ body {
 @media (min-width: 768px) {
 	.navbar-nav>li>a {
 		padding-top: 4px;
-		padding-bottom: 4px;
+		padding-bottom: 1px;
+	}
+}
+.navbar-fixed-top.navbar-shrink {
+	height:121px;
+	padding: 23px 0;
+	.transition(all 0.3s ease);
+	.logo {
+		.transition(all 0.3s ease);
+		height: 73px;
+	}
+	.img-responsive {
+		.transition(all 0.3s ease);
+		max-height: 73px;
+	}
+	.nav {
+		.transition(all 0.3s ease);
+		margin-top: 48px;
 	}
 }

@@ -400,6 +400,11 @@ body {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #03a9f4;
+}
 .nav {
   margin-top: 64px;
   margin-left: 89px;
@@ -407,6 +412,7 @@ body {
 .nav > li > a {
   padding: 4px 5px;
   margin: 0 7px;
+  line-height: 1;
 }
 .logo {
   display: inline-block;
@@ -415,6 +421,27 @@ body {
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     padding-top: 4px;
-    padding-bottom: 4px;
+    padding-bottom: 1px;
   }
+}
+.navbar-fixed-top.navbar-shrink {
+  height: 121px;
+  padding: 23px 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.navbar-fixed-top.navbar-shrink .logo {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 73px;
+}
+.navbar-fixed-top.navbar-shrink .img-responsive {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  max-height: 73px;
+}
+.navbar-fixed-top.navbar-shrink .nav {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 48px;
 }
