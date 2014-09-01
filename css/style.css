@@ -1,6 +1,9 @@
 .dark_color {
   color: #424242;
 }
+.font18 {
+  font-size: 18px;
+}
 body {
   overflow-x: hidden;
 }
@@ -421,12 +424,6 @@ body {
   display: inline-block;
   max-height: 112px;
 }
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    padding-top: 4px;
-    padding-bottom: 1px;
-  }
-}
 .navbar-fixed-top.navbar-shrink {
   height: 121px;
   padding: 23px 0;
@@ -447,4 +444,22 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 48px;
+}
+/*** Header ***/
+header .title {
+  padding: 0 10px;
+}
+header .title:after {
+  border: 1px solid #424242;
+  display: block;
+  width: 36px;
+}
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 4px;
+    padding-bottom: 1px;
+  }
+  header .container {
+    padding-top: 324px;
+  }
 }
