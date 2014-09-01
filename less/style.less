@@ -49,13 +49,6 @@ body {
 	display: inline-block;
 	max-height: 112px;
 }
-
-@media (min-width: 768px) {
-	.navbar-nav>li>a {
-		padding-top: 4px;
-		padding-bottom: 1px;
-	}
-}
 .navbar-fixed-top.navbar-shrink {
 	height:121px;
 	padding: 23px 0;
@@ -71,5 +64,14 @@ body {
 	.nav {
 		.transition(all 0.3s ease);
 		margin-top: 48px;
+	}
+}
+@media (min-width: 768px) {
+	.navbar-nav>li>a {
+		padding-top: 4px;
+		padding-bottom: 1px;
+	}
+	header .container {
+		padding-top: 324px;
 	}
 }
