@@ -68,13 +68,16 @@ body {
 }
 /*** Header ***/
 header .title {
-	padding: 0 10px;	
+	padding: 0 10px;
+	display: inline-block;	
 }
-header .title:after {
-	display: block;
-	height: 1px;
-	width: 100px;
-	background-color: blue;
+.line {
+	display: inline-block;
+	height:1px;		
+	width: 36px;
+	background-color: @darkColor;
+	margin: 4px 0;
+	border: 0;
 }
 @media (min-width: 768px) {
 	.navbar-nav>li>a {
